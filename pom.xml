@@ -43,12 +43,4 @@
  </properties>
 </profile>
 </profiles>
- <dependencies>
- <dependency>
- <groupId>Junit</groupId>
- <artifactId>Junit</artifactId>
- <version>5.8.1</version>
- <scope>test</scope>
- </dependency>
- </dependencies>
 </project>
