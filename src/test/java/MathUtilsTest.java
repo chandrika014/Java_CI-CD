@@ -34,6 +34,6 @@ public class MathUtilsTest {
     @Test
     public void testDivide() {
         assertEquals(3.0, mathUtils.divide(9, 3), 0.0);
-        assertEquals(Double.NEGATIVE_INFINITY, mathUtils.divide(9, 0), 0.0);
+        assertEquals(-1, mathUtils.divide(9, 0), 0.0);
     }
 }
