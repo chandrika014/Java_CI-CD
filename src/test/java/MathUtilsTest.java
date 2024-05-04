@@ -1,18 +1,17 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MathUtilsTest {
     private MathUtils mathUtils;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         mathUtils = new MathUtils();
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         mathUtils = null;
     }
@@ -35,6 +34,6 @@ public class MathUtilsTest {
     @Test
     public void testDivide() {
         assertEquals(3.0, mathUtils.divide(9, 3), 0.0);
-        assertEquals(-1.0, mathUtils.divide(9, 0), 0.0);
+        assertEquals(Double.NEGATIVE_INFINITY, mathUtils.divide(9, 0), 0.0);
     }
 }
